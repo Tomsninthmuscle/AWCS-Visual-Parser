@@ -27,7 +27,7 @@ model_path = 'model.pt'
 
 
 model = torch.load(model_path)
-# 定义sigmoid函数
+
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
   
