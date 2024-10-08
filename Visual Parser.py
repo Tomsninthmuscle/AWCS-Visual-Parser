@@ -79,7 +79,7 @@ for filename in os.listdir(folder_path):
 
         mask_rgba = np.zeros((height, width, 4), dtype=np.uint8)
         mask_rgba[..., 0:3] = (128, 128, 128)
-        mask_rgba[..., 3] = (mask * 100).astype(np.uint8)
+        mask_rgba[..., 3] = (mask * 150).astype(np.uint8)
 
         original_image_rgba = np.array(test_image.convert('RGBA'))
         mapped_image = Image.alpha_composite(Image.fromarray(original_image_rgba), Image.fromarray(mask_rgba))
